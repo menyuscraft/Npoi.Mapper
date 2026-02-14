@@ -127,6 +127,16 @@ public sealed class ColumnAttribute : Attribute
     {
         Name = name;
     }
+    /// <summary>
+    /// Initialize a new instance of <see cref="ColumnAttribute"/> class.
+    /// </summary>
+    /// <param name="index"></param>
+    /// <param name="name"></param>
+    public ColumnAttribute(ushort index, string name)
+    {
+        Index = index;
+        Name = name;
+    }
 
     #endregion
 
