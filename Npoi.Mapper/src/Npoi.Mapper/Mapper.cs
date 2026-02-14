@@ -1022,13 +1022,12 @@ public class Mapper
         return row;
     }
 
-    private List<ColumnInfo> GetTrackedColumns(string sheetName, Type type)
+    private List<ColumnInfo>? GetTrackedColumns(string sheetName, Type type)
     {
         if (!TrackedColumns.TryGetValue(sheetName, out Dictionary<Type, List<object>>? cols)) return null;
 
-        IEnumerable<ColumnInfo> columns = null;
-
-        var cols = TrackedColumns[sheetName];
+        IEnumerable<ColumnInfo>? columns = null;
+        
         if (cols.TryGetValue(type, out var col))
         {
             columns = col.OfType<ColumnInfo>();
