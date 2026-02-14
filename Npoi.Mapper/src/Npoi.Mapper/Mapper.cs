@@ -1024,7 +1024,7 @@ public class Mapper
 
     private List<ColumnInfo> GetTrackedColumns(string sheetName, Type type)
     {
-        if (!TrackedColumns.ContainsKey(sheetName)) return null;
+        if (!TrackedColumns.TryGetValue(sheetName, out Dictionary<Type, List<object>>? cols)) return null;
 
         IEnumerable<ColumnInfo> columns = null;
 
