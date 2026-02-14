@@ -867,7 +867,11 @@ public class Mapper
         Workbook = WorkbookFactory.Create(new FileStream(path, FileMode.Open));
     }
 
-    private static FileStream GetStreamForSave(string path) => File.Open(path, FileMode.Create, FileAccess.Write);
+    private static FileStream GetStreamForSave(string path)
+    {
+        Directory.CreateDirectory(Path.GetDirectoryName(path));
+        return File.Open(path, FileMode.Create, FileAccess.Write);
+    }
 
     #endregion
 
