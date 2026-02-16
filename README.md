@@ -1,14 +1,8 @@
 # Npoi.Mapper
 
-[![NuGet Version](https://shields.io/nuget/v/npoi.mapper?style=flat-square&logo=nuget)](https://www.nuget.org/packages/Npoi.Mapper)
-[![NuGet Downloads](https://shields.io/nuget/dt/npoi.mapper?style=flat-square&logo=nuget)](https://www.nuget.org/packages/Npoi.Mapper)
 [![Open Issues](https://shields.io/github/issues/menyuscraft/npoi.mapper?style=flat-square&logo=github)](https://github.com/menyuscraft/Npoi.Mapper/issues)
 [![Open PRs](https://shields.io/github/issues-pr/menyuscraft/npoi.mapper?style=flat-square&logo=github)](https://github.com/menyuscraft/Npoi.Mapper/pulls)
 
-| Branch  | Build & Test                                                                                                                | Publish                                                                                                    |
-|:--------|:----------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| master  | ![master build status](https://github.com/menyuscraft/Npoi.Mapper/actions/workflows/build-test.yml/badge.svg?branch=master)   | ![ Publish Status](https://github.com/menyuscraft/Npoi.Mapper/actions/workflows/publish-nuget.yml/badge.svg) |
-| develop | ![develop build status](https://github.com/menyuscraft/Npoi.Mapper/actions/workflows/build-test.yml/badge.svg?branch=develop) | N/A                                                                                                        |
 
 
 Convention-based mapper between strong typed object and Excel data via NPOI (Telegram group https://t.me/npoidevs).  
@@ -19,10 +13,6 @@ Support to import and export as *`dynamic`* type.
 Support **nested property mapping** (only work for explicit mapping by `Map` method).
 
 ## [Change log](Changelog.md)
-## Install from NuGet
-In the Package Manager Console:
-
-`PM> Install-Package Npoi.Mapper`
 
 ## Get strong-typed objects from Excel (XLS or XLSX)
 
