@@ -130,8 +130,8 @@ public sealed class ColumnAttribute : Attribute
     /// <summary>
     /// Initialize a new instance of <see cref="ColumnAttribute"/> class.
     /// </summary>
-    /// <param name="index"></param>
-    /// <param name="name"></param>
+    /// <param name="index">The index of the column.</param>
+    /// <param name="name">The name of the column.</param>
     public ColumnAttribute(ushort index, string name)
     {
         Index = index;
